@@ -3,23 +3,14 @@ package main.master;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.FilenameFilter;
 import java.io.IOException;
-import java.lang.reflect.Method;
 import java.util.ArrayList;
-import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import java.util.Map.Entry;
 import java.util.Properties;
-
-import org.codehaus.jackson.JsonNode;
-import org.codehaus.jackson.JsonProcessingException;
-import org.codehaus.jackson.map.ObjectMapper;
-import org.json.JSONObject;
 
 /**
  * This Class acts as an Generic API Page class (Abstration for APIs)
@@ -85,7 +76,7 @@ public class ServiceApi {
 		}
 	}
 	
-	public void setRequestType(String type) {
+	private void setRequestType(String type) {
 		this.requestType = type;
 	}
 
@@ -97,7 +88,7 @@ public class ServiceApi {
 		return url;
 	}
 	
-	public void setApiEnvironment(String environment) {
+	private void setApiEnvironment(String environment) {
 		url = environment + getRequestURL();
 	}
 	
