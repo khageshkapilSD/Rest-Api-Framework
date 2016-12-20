@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
+  <test name="test1(failed)">
+    <groups>
+      <run>
+        <include name="loginTests"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="main.tests.VerifyPostLoginCredentials">
+        <methods>
+          <include name="verifyInvalidLogin"/>
+        </methods>
+      </class> <!-- main.tests.VerifyPostLoginCredentials -->
+    </classes>
+  </test> <!-- test1(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
