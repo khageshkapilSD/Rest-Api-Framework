@@ -4,7 +4,7 @@ Visa Framework Developer - Assignment
 #Sample APIs Used for automation
 </br><pre>
 1.	GET : http://reqres.in/api/users
-	Request Parameters : page=<pageNumber>
+	Request Parameters : page=&lt;pageNumber&gt;
 	Request Headers : contentType=application/json
 	
 2.	POST : http://reqres.in/api/register
@@ -65,11 +65,11 @@ This package contains the configuration properties files of 2 types:
 	
 	a) Test.env : Base / Environment URL for all the API calls
 
-2. <apiName>.properties : these contain the specific parameters for that particular API, below is a description for these parameters:
+2. &lt;apiName&gt;.properties : these contain the specific parameters for that particular API, below is a description for these parameters:
 	
 	a) url : relative URL of the API (Note: environment/base URL is defined in the global.properties)
 	b) request.method : the HTTP method pertaining to the API call
-	c) request.header.<header-name> : to specify a header in the API call (these can also be added from the code by using addHeader() method of ServiceApi
+	c) request.header.&lt;header-name&gt; : to specify a header in the API call (these can also be added from the code by using addHeader() method of ServiceApi
 	d) response.schema : name of the model class specifying the JSON schema for the API Response
 	e) request.schema (applicable only to POST requests) : name of the model class specifying the JSON schema for request 
 </pre>
