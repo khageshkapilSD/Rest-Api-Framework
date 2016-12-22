@@ -25,8 +25,6 @@ Note : for further details, please refer to : <a href="http://reqres.in/">http:/
 
 #Project Structure
 </br><pre>
-
-<pre>
 src
 |
 |-->api
@@ -102,4 +100,4 @@ This package defines the core framework classes :
 #main.test
 </br><pre>
 This package contains all the TestNG test classes.
-</pre>
+</pre
