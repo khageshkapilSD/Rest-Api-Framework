@@ -102,4 +102,4 @@ This package defines the core framework classes :
 This package contains all the TestNG test classes.
 </pre
 
-<p>this is a test1</p>
+<p>this is a test2</p>
